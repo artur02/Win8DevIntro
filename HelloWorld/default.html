@@ -29,5 +29,21 @@
                 <span id="output"></span>
             </section>
         </article>
+        
+        <div id="appBar" data-win-control="WinJS.UI.AppBar">
+            <button 
+                data-win-control="WinJS.UI.AppBarCommand"
+                data-win-options="{id:'cmdRating',label:'Rate',icon:'favorite',section:'global',tooltip:'Rate thead app'}"></button>
+        </div>
+        
+        <div id="ratings" data-win-control="WinJS.UI.Flyout">
+            <article>
+                <header>
+                    <h2 class="win-title">Rate</h2>
+                </header>
+                Rate the application<br />
+                    <div data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 4.3, tooltipStrings:['Awful', 'Boring', 'OK', 'Interesting', 'Awesome']}"></div>
+            </article>
+        </div>
     </body>
 </html>

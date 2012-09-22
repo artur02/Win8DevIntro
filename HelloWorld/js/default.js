@@ -33,6 +33,12 @@
                     : "";
                 WinJS.Utilities.setInnerHTML(out, text);
             });
+
+            var ratingCommand = document.getElementById("cmdRating");
+            ratingCommand.addEventListener("click", function() {
+                var ratings = document.getElementById("ratings");
+                ratings.winControl.show(this);
+            });
         }
     };
 
